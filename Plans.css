@@ -1,0 +1,207 @@
+:root{
+    --card-height:300px;
+    --card-width:calc(var(--card-height)/1.5);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background:black;
+    margin:0;
+}
+.navbar{
+    background:black!important;
+}
+.navbar-toggler{
+    border:3px solid red;
+}
+.navbar-brand{
+    color:red;
+    font-size:30px;
+    font-weight:bold;
+}
+.navbar-brand:hover{
+    transform: scale(1.2);
+    transition: 0.3s all ease;
+    color:red;
+}
+.nav-item {
+    color:white!important;
+    font-size:20px;
+}
+.navbar-nav .btn{
+    background: red;
+    color:white;
+}
+.navbar-nav .btn:hover{
+    transform: scale(1.2);
+    transition: 0.3s all ease;
+}
+.nav-item li a
+{
+  color:white;
+}
+.nav-item a:hover{
+  color:red!important;
+}
+.smallbox{
+    width:400px;
+    background: white;
+    margin-left:350px;
+    margin-top:70px;
+    border-radius: 10px;
+}
+.smallbox i{
+    color:red;
+    font-size:45px;
+    margin-left:180px;
+    margin-top:30px;
+}
+.smallbox .btn{
+    height:50px;
+    width:200px;
+    background: red;
+    color:white;
+    font-weight: bold;
+    font-size:25px;
+    margin-left:100px;
+    margin-top:20px;
+}
+section{
+    height:700px;
+    width:100%;
+    display:none;
+    margin-top:80px;
+}
+.plandiv{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    margin-top:50px;
+}
+.plandiv div{
+    border-radius: 10px;
+    background:white;
+    width:23%;
+}
+.plandiv div:hover{
+    margin-top:-40px;
+    transition: all 0.3s ease;
+}
+.plandiv div .box{
+    height:130px;
+    width:320px;
+    border-radius:10px;
+    margin-left:15px;
+    margin-top:20px;
+    background:red;
+}
+.plandiv div .box h3{
+    color:white;
+    margin-left:10px;
+    padding:10px;
+}
+.plandiv div .box span{
+    color:white;
+    font-size:28px;
+}
+.plandiv div .box span i{
+    font-size:25px;
+    color:white;
+    margin-left:20px;
+}
+.plandiv div #i1{
+    color:red;
+    font-size:30px;
+    margin-top:10px;
+    padding:20px;
+}
+.plandiv div h6{
+    color:grey;
+    margin-top:-55px;
+    margin-left:70px;
+}
+.plandiv div:hover{
+    background:red;
+}
+.plandiv div:hover{
+    .box{
+        background: white;
+    }
+    .box i,h3,span{
+        color:black;
+    }
+    #i1{
+        color: white!important;;
+    }
+    .plandiv div h6,#s1{
+        color:white!important;
+    }
+}
+
+footer{
+    height:50px;
+    width:100%;
+    background:black;
+    display:flex;
+    flex-direction: row;
+    margin-top:110px;
+  }
+   .footer1 h2{
+    padding:5px;
+    color:red;
+    font-weight:bold;
+  }
+  .footer2 h5{
+    color:red;
+    font-size:20px;
+    padding:15px;
+    font-weight:bold;
+    text-align: center;
+  }
+  .footer3 i{
+    color:red;
+    font-size:30px;
+    margin-left:50px;
+    padding:15px;
+  }
+  @media(max-width:850px){
+    .smallbox{
+        width: 90%;
+        margin-top:300px;
+        margin-left:20px;
+    }
+    #navbtn{
+        width:80px;
+    }
+    .navbar-nav #home{
+        margin-left:-720px!important;
+    }
+    .plandiv{
+        flex-direction: column;
+        gap:60px;
+    }
+    .plandiv .plan1{
+        width:90%;
+        margin-left:20px;
+    }
+    .plandiv .plan2{
+        width:90%;
+        margin-left:20px;
+    }
+    .plandiv .plan3{
+        width:90%;
+        margin-left:20px;
+    }
+    .plandiv .plan4{
+        width:90%;
+        margin-left:20px;
+    }
+   #signinbtn{
+    display:none;
+   }
+   footer{
+    display:none;
+   }
+   }
+  
